@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.inventory.inventory.controllers.ClientController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="400.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="firstName" prefWidth="100.0" text="FIRST NAME" />
+            <TableColumn fx:id="lastName" prefWidth="107.0" text="LAST NAME" />
+            <TableColumn fx:id="email" prefWidth="108.0" text="EMAIL" />
+            <TableColumn fx:id="phoneNumber" prefWidth="126.0" text="PHONE NUMBER" />
+            <TableColumn fx:id="addedOn" prefWidth="88.0" text="ADDED ON" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="606.0" prefHeight="400.0" prefWidth="182.0" spacing="30.0">
+         <children>
+            <Button fx:id="addClientBtn" mnemonicParsing="false" onAction="#addClientBtnAction" prefHeight="40.0" prefWidth="100.0" text="Add Client" />
+            <Button fx:id="removeClientBtn" mnemonicParsing="false" onAction="#removeClientBtnAction" prefHeight="40.0" prefWidth="100.0" text="Remove Client" />
+            <Button fx:id="clientCartBtn" mnemonicParsing="false" onAction="#clientCartBtnAction" prefHeight="40.0" prefWidth="100.0" text="Clients Cart" />
+            <Button fx:id="goBackBtn" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#goBackBtnAction" prefHeight="40.0" prefWidth="100.0" text="Go Back" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

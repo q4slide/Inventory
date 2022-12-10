@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.inventory.controllers.ProductController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="387.0" prefWidth="669.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="101.0" text="NAME" />
+            <TableColumn fx:id="description" prefWidth="205.0" text="DESCRIPTION" />
+            <TableColumn fx:id="price" prefWidth="72.0" text="PRICE" />
+            <TableColumn fx:id="addedOn" prefWidth="79.0" text="ADDED ON" />
+            <TableColumn fx:id="available" prefWidth="134.0" text="IS AVAILABLE" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="669.0" prefHeight="389.0" prefWidth="150.0" spacing="20.0">
+         <children>
+            <Button fx:id="addProductBtn" mnemonicParsing="false" onAction="#addProductBtnAction" prefHeight="40.0" prefWidth="120.0" text="Add Product" />
+            <Button fx:id="removeProductBtn" mnemonicParsing="false" onAction="#removeProductBtnAction" prefHeight="40.0" prefWidth="120.0" text="Remove Product" />
+            <Button fx:id="assignToBtn" mnemonicParsing="false" onAction="#assignToBtnAction" prefHeight="40.0" prefWidth="120.0" text="Assign To" />
+            <Button fx:id="goBackBtn" mnemonicParsing="false" onAction="#goBackBtnAction" prefHeight="40.0" prefWidth="120.0" text="Go Back" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

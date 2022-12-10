@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.inventory.controllers.UserController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="402.0" prefWidth="425.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="username" prefWidth="153.0" text="USERNAME" />
+            <TableColumn fx:id="password" prefWidth="126.0" text="PASSWORD" />
+            <TableColumn fx:id="admin" prefWidth="98.0" text="ADMIN" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="424.0" prefHeight="400.0" prefWidth="131.0" spacing="20.0">
+         <children>
+            <Button fx:id="addUserBtn" mnemonicParsing="false" onAction="#addUserBtnAction" prefHeight="40.0" prefWidth="100.0" text="Add User" />
+            <Button fx:id="removeUserBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#removeUserBtnAction" prefHeight="40.0" prefWidth="100.0" text="Remove User" />
+            <Button fx:id="goBackBtn" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#goBackBtnAction" prefHeight="40.0" prefWidth="100.0" text="Go Back" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
